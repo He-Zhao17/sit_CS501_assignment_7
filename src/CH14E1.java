@@ -21,22 +21,22 @@ public class CH14E1 extends Application {
         pane.setVgap(5.5);
 
         //images
-        Image image1 = new Image("us_flag.gif");
-        Image image2 = new Image("england_flag.gif");
-        Image image3 = new Image("brazil_flag.gif");
-        Image image4 = new Image("india_flag.gif");
+        Image image1 = new Image("flag1.gif");
+        Image image2 = new Image("flag2.gif");
+        Image image3 = new Image("fr.gif");
+        Image image4 = new Image("us.gif");
 
         //Setting up images to display
-        ImageView usa = new ImageView(image1);
-        ImageView england = new ImageView(image2);
-        ImageView brazil = new ImageView(image3);
-        ImageView china = new ImageView(image4);
+        ImageView ger = new ImageView(image1);
+        ImageView china = new ImageView(image2);
+        ImageView fr = new ImageView(image3);
+        ImageView usa = new ImageView(image4);
 
         //Insert each flag into the grid
-        pane.add(usa, 0, 0);
-        pane.add(england, 0, 1);
-        pane.add(brazil, 1, 0);
-        pane.add(china, 1, 1);
+        pane.add(ger, 0, 0);
+        pane.add(china, 0, 1);
+        pane.add(fr, 1, 0);
+        pane.add(usa, 1, 1);
 
         //Set up scene and stage
         Scene scene = new Scene(pane);
